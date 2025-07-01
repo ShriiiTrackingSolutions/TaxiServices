@@ -332,7 +332,7 @@ header{
   display: inline-block;
   padding: 12px 24px;
   margin-top: 16px;
-  background-color: var(--accentColour);
+  background-color: var(--primary-color);
   color: var(--black);
   font-weight: 600;
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, scale 0.1s ease-in-out ;
@@ -851,6 +851,9 @@ color: #ffffff;
 .NewBanner.contactPage0{
   background: linear-gradient(#0a1c4ece, #0a1c4ece) center/cover no-repeat, url('../image/ContactBanner.webp') center/cover no-repeat;
 }
+.NewBanner.servicePage0{
+  background: linear-gradient(#0a1c4ece, #0a1c4ece) center/cover no-repeat, url('../image/Servicebanner.webp') center/cover no-repeat;
+}
 
 
 .NewBanner .display-2{
@@ -880,6 +883,9 @@ margin-left: auto;
 margin-right: auto;
 }
 
+#contactForm button{
+  border: none;
+}
 
 .formSection .modal-header {
   justify-content: center;
@@ -918,4 +924,65 @@ margin-right: auto;
 }
 .iframeCol iframe{
   height: 700px;
+}
+
+
+.service_Section .container>.row{
+  row-gap: 24px;
+}
+.serviceCards{
+  padding: 20px;
+  height: 100%;
+  background-color: var(--lightBg);
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px 1px, rgba(0, 0, 0, 0.06) 0px 2px 4px 1px;
+  text-align: center;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.serviceCards img{
+border-radius: 8px;
+}
+
+.serviceCards:hover{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+
+/* Stands Out section start */
+.standsOut {
+  background-color: var(--lightBg);
+}
+.standsOut .container>.row{
+  row-gap: 30px;
+}
+.standsOut .col-lg-5 img{
+border-radius: 8px;
+}
+/* Stands Out section end */
+
+/* CTA section start */
+.CTA_Section  {
+  background: linear-gradient(#fdba00d3, #fdba00d3) center/cover no-repeat, url('../image/BannerImage.webp') center/cover no-repeat;
+}
+.CTA_Section  .maxPara{
+  max-width: 700px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.CTA_Section .secH{
+  color: var(--secondary-color);
+}
+
+.CTA_Section .btnFill{
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+.CTA_Section .btnFill:hover{
+  background-color: #0955c7;
+}
+/* CTA section end */
+
+.taxisVarieties .container>.row{
+  row-gap: 24px;
 }
